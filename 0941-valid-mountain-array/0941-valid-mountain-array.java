@@ -17,7 +17,7 @@ class Solution {
             return false;
         }
         
-       System.out.println(flag);
+       // System.out.println(flag);
         
         for(int i = flag; i < arr.length-1; i++)
         {
