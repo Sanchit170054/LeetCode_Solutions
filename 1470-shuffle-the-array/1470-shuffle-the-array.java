@@ -3,18 +3,13 @@ class Solution {
         int result[] = new int[nums.length];
         int a = 0, b = n;
         
-        for(int i = 0; i < nums.length; i++)
+        for(int i = 0; i < nums.length;)
         {
-            if(i % 2 == 0)
-            {
-                result[i] = nums[a];
-                a++;
-            }
-            else
-            {
-                result[i] = nums[b];
-                b++;
-            }
+            result[i] = nums[a];
+            ++i;
+            result[i] = nums[b];
+            ++i;
+            a++;b++;
         }
         return result;
     }
